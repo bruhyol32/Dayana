@@ -1,0 +1,411 @@
+for _, obj in ipairs(game.Workspace:GetChildren()) do
+    if obj:IsA("Model") and obj.Name == "Model" and obj.DataCost == 76 then
+        obj:Destroy()
+        print("Das Modell mit DataCost 76 wurde zerstört.")
+        break
+    end
+end
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "Lami Hangout - ForRealDayana", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+local Tab = Window:MakeTab({
+	Name = "Clothing",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "Normal Lami  (Blue)",
+	Callback = function()
+        local player = game.Players.LocalPlayer
+        local character = player.Character or player.CharacterAdded:Wait()
+        local lastPosition = character.HumanoidRootPart.Position
+        
+        -- Funktion, die den Spieler an die Position vor 1 Sekunde teleportiert
+        local function teleportToLastPosition()
+            -- Speichert die aktuelle Position des Spielers
+            local previousPosition = lastPosition
+            lastPosition = character.HumanoidRootPart.Position
+        
+            -- Wartet 1 Sekunde und teleportiert dann zum gespeicherten Punkt
+            wait(0.1)
+        
+            -- Teleportiert den Spieler zur Position vor einer Sekunde
+            if previousPosition then
+                character:SetPrimaryPartCFrame(CFrame.new(previousPosition))
+            end
+        end
+        
+        -- Beispiel: Funktion aufrufen
+        
+        
+
+		local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+		local location = CFrame.new(131, 772, -273)
+		local humanoid = game.Players.LocalPlayer.Character.Humanoid
+		humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+		wait(0)
+		pl.CFrame = location
+teleportToLastPosition()
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Normal Emily (Blue)",
+	Callback = function()
+        local player = game.Players.LocalPlayer
+        local character = player.Character or player.CharacterAdded:Wait()
+        local lastPosition = character.HumanoidRootPart.Position
+        
+        -- Funktion, die den Spieler an die Position vor 1 Sekunde teleportiert
+        local function teleportToLastPositiona()
+            -- Speichert die aktuelle Position des Spielers
+            local previousPosition = lastPosition
+            lastPosition = character.HumanoidRootPart.Position
+        
+            -- Wartet 1 Sekunde und teleportiert dann zum gespeicherten Punkt
+            wait(0.1)
+        
+            -- Teleportiert den Spieler zur Position vor einer Sekunde
+            if previousPosition then
+                character:SetPrimaryPartCFrame(CFrame.new(previousPosition))
+            end
+        end
+        
+        -- Beispiel: Funktion aufrufen
+        
+        
+
+		local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+		local location = CFrame.new(138, 772, -273)
+		local humanoid = game.Players.LocalPlayer.Character.Humanoid
+		humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+		wait(0)
+		pl.CFrame = location
+teleportToLastPositiona()
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Normal Lami   (Red)",
+	Callback = function()
+        local player = game.Players.LocalPlayer
+        local character = player.Character or player.CharacterAdded:Wait()
+        local lastPosition = character.HumanoidRootPart.Position
+        
+        -- Funktion, die den Spieler an die Position vor 1 Sekunde teleportiert
+        local function teleportToLastPositionc()
+            -- Speichert die aktuelle Position des Spielers
+            local previousPosition = lastPosition
+            lastPosition = character.HumanoidRootPart.Position
+        
+            -- Wartet 1 Sekunde und teleportiert dann zum gespeicherten Punkt
+            wait(0.1)
+        
+            -- Teleportiert den Spieler zur Position vor einer Sekunde
+            if previousPosition then
+                character:SetPrimaryPartCFrame(CFrame.new(previousPosition))
+            end
+        end
+        
+        -- Beispiel: Funktion aufrufen
+        
+        
+
+		local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+		local location = CFrame.new(131, 772, -242)
+		local humanoid = game.Players.LocalPlayer.Character.Humanoid
+		humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+		wait(0)
+		pl.CFrame = location
+teleportToLastPositionc()
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Normal Emily  (Red)",
+	Callback = function()
+        local player = game.Players.LocalPlayer
+        local character = player.Character or player.CharacterAdded:Wait()
+        local lastPosition = character.HumanoidRootPart.Position
+        
+        -- Funktion, die den Spieler an die Position vor 1 Sekunde teleportiert
+        local function teleportToLastPositionx()
+            -- Speichert die aktuelle Position des Spielers
+            local previousPosition = lastPosition
+            lastPosition = character.HumanoidRootPart.Position
+        
+            -- Wartet 1 Sekunde und teleportiert dann zum gespeicherten Punkt
+            wait(0.1)
+        
+            -- Teleportiert den Spieler zur Position vor einer Sekunde
+            if previousPosition then
+                character:SetPrimaryPartCFrame(CFrame.new(previousPosition))
+            end
+        end
+        
+        -- Beispiel: Funktion aufrufen
+        
+        
+
+		local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+		local location = CFrame.new(138, 772, -242)
+		local humanoid = game.Players.LocalPlayer.Character.Humanoid
+		humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+		wait(0)
+		pl.CFrame = location
+teleportToLastPositionx()
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+  	end    
+})
+
+Tab:AddButton({
+Name = "Ronaldo",
+Callback = function()
+    local player = game.Players.LocalPlayer
+    local character = player.Character or player.CharacterAdded:Wait()
+    local lastPosition = character.HumanoidRootPart.Position
+    
+    -- Funktion, die den Spieler an die Position vor 1 Sekunde teleportiert
+    local function teleportToLastPositionn()
+        -- Speichert die aktuelle Position des Spielers
+        local previousPosition = lastPosition
+        lastPosition = character.HumanoidRootPart.Position
+    
+        -- Wartet 1 Sekunde und teleportiert dann zum gespeicherten Punkt
+        wait(0.1)
+    
+        -- Teleportiert den Spieler zur Position vor einer Sekunde
+        if previousPosition then
+            character:SetPrimaryPartCFrame(CFrame.new(previousPosition))
+        end
+    end
+    
+    -- Beispiel: Funktion aufrufen
+    
+    
+
+    local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+    local location = CFrame.new(17, 742, 74)
+    local humanoid = game.Players.LocalPlayer.Character.Humanoid
+    humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+    wait(0)
+    pl.CFrame = location
+teleportToLastPositionn()
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+end    
+})
+
+Tab:AddButton({
+    Name = "Scheißhaufen Lami",
+    Callback = function()
+        local player = game.Players.LocalPlayer
+        local character = player.Character or player.CharacterAdded:Wait()
+        local lastPosition = character.HumanoidRootPart.Position
+        
+        -- Funktion, die den Spieler an die Position vor 1 Sekunde teleportiert
+        local function teleportToLastPositionn()
+            -- Speichert die aktuelle Position des Spielers
+            local previousPosition = lastPosition
+            lastPosition = character.HumanoidRootPart.Position
+        
+            -- Wartet 1 Sekunde und teleportiert dann zum gespeicherten Punkt
+            wait(0.1)
+        
+            -- Teleportiert den Spieler zur Position vor einer Sekunde
+            if previousPosition then
+                character:SetPrimaryPartCFrame(CFrame.new(previousPosition))
+            end
+        end
+        
+        -- Beispiel: Funktion aufrufen
+        
+        
+    
+        local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+        local location = CFrame.new(22, 742, 74)
+        local humanoid = game.Players.LocalPlayer.Character.Humanoid
+        humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+        wait(0)
+        pl.CFrame = location
+    teleportToLastPositionn()
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+    end    
+    })
+
+    Tab:AddButton({
+        Name = "Bananen Lami",
+        Callback = function()
+            local player = game.Players.LocalPlayer
+            local character = player.Character or player.CharacterAdded:Wait()
+            local lastPosition = character.HumanoidRootPart.Position
+            
+            -- Funktion, die den Spieler an die Position vor 1 Sekunde teleportiert
+            local function teleportToLastPositionn()
+                -- Speichert die aktuelle Position des Spielers
+                local previousPosition = lastPosition
+                lastPosition = character.HumanoidRootPart.Position
+            
+                -- Wartet 1 Sekunde und teleportiert dann zum gespeicherten Punkt
+                wait(0.1)
+            
+                -- Teleportiert den Spieler zur Position vor einer Sekunde
+                if previousPosition then
+                    character:SetPrimaryPartCFrame(CFrame.new(previousPosition))
+                end
+            end
+            
+            -- Beispiel: Funktion aufrufen
+            
+            
+        
+            local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+            local location = CFrame.new(28, 741, 68)
+            local humanoid = game.Players.LocalPlayer.Character.Humanoid
+            humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+            wait(0)
+            pl.CFrame = location
+        teleportToLastPositionn()
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+        end    
+        })
+
+        Tab:AddButton({
+            Name = "Döner Lami",
+            Callback = function()
+                local player = game.Players.LocalPlayer
+                local character = player.Character or player.CharacterAdded:Wait()
+                local lastPosition = character.HumanoidRootPart.Position
+                
+                -- Funktion, die den Spieler an die Position vor 1 Sekunde teleportiert
+                local function teleportToLastPositionn()
+                    -- Speichert die aktuelle Position des Spielers
+                    local previousPosition = lastPosition
+                    lastPosition = character.HumanoidRootPart.Position
+                
+                    -- Wartet 1 Sekunde und teleportiert dann zum gespeicherten Punkt
+                    wait(0.1)
+                
+                    -- Teleportiert den Spieler zur Position vor einer Sekunde
+                    if previousPosition then
+                        character:SetPrimaryPartCFrame(CFrame.new(previousPosition))
+                    end
+                end
+                
+                -- Beispiel: Funktion aufrufen
+                
+                
+            
+                local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+                local location = CFrame.new(28, 741, 63)
+                local humanoid = game.Players.LocalPlayer.Character.Humanoid
+                humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+                wait(0)
+                pl.CFrame = location
+            teleportToLastPositionn()
+            game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+            end    
+            })
+
+            Tab:AddButton({
+                Name = "i 💔 lami (schwarz)",
+                Callback = function()
+                    local player = game.Players.LocalPlayer
+                    local character = player.Character or player.CharacterAdded:Wait()
+                    local lastPosition = character.HumanoidRootPart.Position
+                    
+                    -- Funktion, die den Spieler an die Position vor 1 Sekunde teleportiert
+                    local function teleportToLastPositionn()
+                        -- Speichert die aktuelle Position des Spielers
+                        local previousPosition = lastPosition
+                        lastPosition = character.HumanoidRootPart.Position
+                    
+                        -- Wartet 1 Sekunde und teleportiert dann zum gespeicherten Punkt
+                        wait(0.1)
+                    
+                        -- Teleportiert den Spieler zur Position vor einer Sekunde
+                        if previousPosition then
+                            character:SetPrimaryPartCFrame(CFrame.new(previousPosition))
+                        end
+                    end
+                    
+                    -- Beispiel: Funktion aufrufen
+                    
+                    
+                
+                    local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+                    local location = CFrame.new(184, 731, 0)
+                    local humanoid = game.Players.LocalPlayer.Character.Humanoid
+                    humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+                    wait(0)
+                    pl.CFrame = location
+                teleportToLastPositionn()
+                game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+                end    
+                })
+
+                Tab:AddButton({
+                    Name = "i 💔 lami (weiß)",
+                    Callback = function()
+                        local player = game.Players.LocalPlayer
+                        local character = player.Character or player.CharacterAdded:Wait()
+                        local lastPosition = character.HumanoidRootPart.Position
+                        
+                        -- Funktion, die den Spieler an die Position vor 1 Sekunde teleportiert
+                        local function teleportToLastPositionn()
+                            -- Speichert die aktuelle Position des Spielers
+                            local previousPosition = lastPosition
+                            lastPosition = character.HumanoidRootPart.Position
+                        
+                            -- Wartet 1 Sekunde und teleportiert dann zum gespeicherten Punkt
+                            wait(0.1)
+                        
+                            -- Teleportiert den Spieler zur Position vor einer Sekunde
+                            if previousPosition then
+                                character:SetPrimaryPartCFrame(CFrame.new(previousPosition))
+                            end
+                        end
+                        
+                        -- Beispiel: Funktion aufrufen
+                        
+                        
+                    
+                        local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+                        local location = CFrame.new(184, 731, -4)
+                        local humanoid = game.Players.LocalPlayer.Character.Humanoid
+                        humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+                        wait(0)
+                        pl.CFrame = location
+                    teleportToLastPositionn()
+                    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+                    end    
+                    })
+
+                    local OtherTab = Window:MakeTab({
+                        Name = "Misc",
+                        Icon = "rbxassetid://4483345998",
+                        PremiumOnly = false
+                    })
+
+                    OtherTab:AddButton({
+                        Name = "Nacht",
+                        Callback = function()
+                            game.Lighting.TimeOfDay = "0:00:00"  -- Setzt die Zeit auf 14 Uhr (Tag)
+                          end    
+                    })
+
+                    OtherTab:AddButton({
+                        Name = "Tag",
+                        Callback = function()
+                            game.Lighting.TimeOfDay = "14:00:00"  -- Setzt die Zeit auf 14 Uhr (Tag)
+                          end    
+                    })
+                    OtherTab:AddButton({
+                        Name = "Delete This Script",
+                        Callback = function()
+                            OrionLib:Destroy()
+                          end    
+                    })
+                    
